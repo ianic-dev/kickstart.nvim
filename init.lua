@@ -605,7 +605,15 @@ require('lazy').setup({
         pyright = {},
         rust_analyzer = {},
         nil_ls = {},
-        svls = {},
+        svlangserver = {},
+        --[[
+        svls = {
+          cmd = { "svls" },
+          filetypes = {'systemverilog', 'verilog'},
+          single_file_support = true
+        },
+        --]]
+
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
